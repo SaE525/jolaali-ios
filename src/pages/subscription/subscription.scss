@@ -1,0 +1,55 @@
+page-subscription {
+  .main{
+    background-image: url('../../assets/icon/background2.png');
+    background-size: cover;
+    background-repeat:   no-repeat;
+    background-position: center center;
+  }
+  .logo{
+    text-align: center;
+  }
+  [col-1]{
+    line-height: 9;
+  }
+  .card-ios{
+    background:#cfe8e1;
+  }
+  .card-header-ios{
+    font-size: 2.6rem;
+    text-align: center;
+    padding: 0px;
+  }
+  .item-ios[no-lines] {
+    margin: 6% 0 0 0;
+    font-family: inherit;
+    border-radius: 10px;
+  }
+  .applyclass{
+    margin:15%;
+    background-color: #fecb32;
+    font-family: segoeprb;
+  }
+  .signinbtn{
+    background-color: #fecb32;
+    opacity: 1 ;
+    font-family: segoeprb;
+    font-weight: 700;
+    border-radius: 10px;
+    margin-top: 10%;;
+  }
+  .toolbar-background-ios {
+    background: #9ed5d2;
+  }
+  .toolbar-title-ios {
+    text-align: center;
+    font-family: malgun;
+    font-size: x-large;
+  }
+  .grid {
+     padding: 0px;
+  }
+  .class1{
+    pointer-events: none;
+    opacity: 0.5 !important;
+  }
+}

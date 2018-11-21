@@ -1,0 +1,35 @@
+page-feedback {
+  .main{
+    background-image: url('../../assets/icon/background2.png');
+    background-size: cover;
+    background-repeat:   no-repeat;
+    background-position: center center;
+  }
+  .logo{
+    text-align: center;
+    padding-top: 13%;
+  }
+  .feedbackArea{
+    margin-top: 20%;
+  }
+  .scroll-content {
+    padding-bottom: 0 !important;
+  }
+  .signinbtn{
+    background-color: #fecb32;
+    opacity: 1 !important;
+    font-family: segoeprb;
+    font-weight: 700;
+    border-radius: 10px;
+    margin-top: 11%;
+  }
+  .text-input-ios {
+    margin: 3% 0%;
+  }
+  ion-textarea {
+    ::placeholder{
+      text-align:center !important;
+    }
+  }
+
+}

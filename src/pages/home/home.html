@@ -1,0 +1,29 @@
+<!--
+  Generated template for the HomePage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>CATEGORIES</ion-title>
+  </ion-navbar>
+
+</ion-header>
+<ion-content no-padding class="main">
+  <ion-grid>
+    <ion-row align-items-cente>
+      <ion-col col-lg-6 col-md-6 *ngFor="let cat of catagories; let i = index">
+        <ion-card (click) = "getStories(cat)">
+          <img [src]="cat.cat_image ? imageSrc + cat.cat_image : 'assets/icon/def_img.png'"/>
+          <ion-card-content>
+            <ion-card-title>
+             <span>{{ cat.title }}</span>
+            </ion-card-title>
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>

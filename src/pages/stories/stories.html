@@ -1,0 +1,25 @@
+<!--
+  Generated template for the StoriesPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title class="maintitle">STORIES</ion-title>
+  </ion-navbar>
+  <ion-toolbar>
+    <ion-title class="subtitle">{{stories.title}}</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+
+<ion-content padding class="main">
+  <ion-list *ngFor="let story of storyData" (click)="openstory(story.id,story.image,story.cat_type)">
+<ion-item  class="itemclass">
+ <div class="imgdiv"><img  class="imgclass" [src]="imageSrc + story.image"></div>
+  <div class="songtitle">{{story.title}}</div>
+</ion-item>
+  </ion-list>
+</ion-content>

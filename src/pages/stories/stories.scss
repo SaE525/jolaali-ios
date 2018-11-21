@@ -1,0 +1,54 @@
+page-stories {
+  .toolbar-background-ios{
+    background-color: #9ed5d2;;
+  }
+  .toolbar-title-ios{
+    font-family: malgun;
+    font-size: x-large;
+  }
+  //.maintitle{
+  //  margin: 0 0 0 18% !important;
+  //}
+  .subtitle{
+    text-align: center;
+
+  }
+
+  .list-ios {
+    margin: -1px 0 0px;
+  }
+  .itemclass{
+    background: transparent;
+    border-bottom:  1px solid white;
+  }
+  .imgdiv{
+    width: 30%;
+    float:left;
+  }
+  .imgclass{
+    border-radius: 10%;
+  }
+  .songtitle{
+    float: right;
+    width: 70%;
+    margin-top: 15%;
+    overflow: hidden;
+    padding: 0% 0% 0% 4%;
+    text-overflow: ellipsis;
+    line-height: 1.5em;
+    height: 3em;
+    font-family:malgun;
+    white-space: normal;
+    color:white;
+  }
+  .main{
+    background-image: url('../../assets/icon/background2.png');
+    background-size: cover;
+    background-repeat:   no-repeat;
+    background-position: center center;
+  }
+  .item-ios[no-lines].bottom-border {
+    border-bottom: 1px solid grey;
+  }
+
+}

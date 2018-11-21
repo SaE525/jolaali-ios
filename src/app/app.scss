@@ -1,0 +1,116 @@
+// http://ionicframework.com/docs/theming/
+
+
+// App Global Sass
+// --------------------------------------------------
+// Put style rules here that you want to apply globally. These
+// styles are for the entire app and not just one component.
+// Additionally, this file can be also used as an entry point
+// to import other Sass files to be included in the output CSS.
+//
+// Shared Sass variables, which can be used to adjust Ionic's
+// default Sass variables, belong in "theme/variables.scss".
+//
+// To declare rules for a specific mode, create a child rule
+// for the .md, .ios, or .wp mode classes. The mode class is
+// automatically applied to the <body> element in the app.
+.tabs-ios .tabbar {
+  background: #FFDF00;
+}
+//.tabs-ios {
+//  a[aria-selected=false] {
+//    .tab-button-icon[aria-label="logout"] {
+//      background-image: url('../assets/icon/Home.png');
+//      background-repeat: no-repeat;
+//    }
+//    .tab-button-icon[aria-label="profile"] {
+//      background-image: url('../assets/icon/MyProfile.png');
+//      background-repeat: no-repeat;
+//    }
+//    .tab-button-icon[aria-label="changePassword"] {
+//      background-image: url('../assets/icon/ChangePassword.png');
+//      background-repeat: no-repeat;
+//    }
+//    .tab-button-icon[aria-label="subscription"] {
+//      background-image: url('../assets/icon/Subscription.png');
+//      background-repeat: no-repeat;
+//    }
+//    .tab-button-icon[aria-label="feedBack"] {
+//      background-image: url('../assets/icon/Feedback.png');
+//      background-repeat: no-repeat;
+//    }
+//  }
+//  a[aria-selected=true] {
+//    .tab-button-icon[aria-label="logout"]{
+//      background-image: url('../assets/icon/Home.png');
+//      background-repeat: no-repeat;
+//    }
+//    .tab-button-icon[aria-label="profile"] {
+//      background-image: url('../assets/icon/MyProfile.png');
+//      background-repeat: no-repeat;
+//    }
+//    .tab-button-icon[aria-label="changePassword"] {
+//      background-image: url('../assets/icon/ChangePassword.png');
+//      background-repeat: no-repeat;
+//    }
+//    .tab-button-icon[aria-labell="subscription"] {
+//      background-image: url('../assets/icon/Subscription.png');
+//      background-repeat: no-repeat;
+//    }
+//    .tab-button-icon[aria-label="feedback"] {
+//      background-image: url('../assets/icon/Feedback.png');
+//      background-repeat: no-repeat;
+//    }
+//  }
+//}
+  .ion-ios-profile, .ion-ios-profile-outline{
+    content: url('../assets/icon/MyProfile.png');
+  }
+  .ion-ios-changePassword, .ion-ios-changePassword-outline{
+    content: url('../assets/icon/ChangePassword.png');
+  }
+  .ion-ios-subscription, .ion-ios-subscription-outline{
+    content: url('../assets/icon/Subscription.png');
+  }
+  .ion-ios-logout, .ion-ios-logout-outline{
+    content: url('../assets/icon/Home.png');
+  }
+  .ion-ios-feedBack, .ion-ios-feedBack-outline{
+    content: url('../assets/icon/Feedback.png');
+  }
+  @font-face {
+    font-family: malgun;
+    src: url('../assets/fonts/malgun.ttf');
+  }
+  @font-face {
+    font-family: malgunbd;
+    src: url('../assets/fonts/malgunbd.ttf');
+  }
+  @font-face {
+    font-family: malgunsl;
+    src: url('../assets/fonts/malgunsl.ttf');
+  }
+  @font-face {
+    font-family: Mvboli;
+    src: url('../assets/fonts/mvboli.ttf');
+  }
+  @font-face {
+    font-family: segoepr;
+    src: url('../assets/fonts/segoepr.ttf');
+  }
+  @font-face {
+    font-family: segoeprb;
+    src: url('../assets/fonts/segoeprb.ttf');
+  }
+  @font-face {
+    font-family: tektonprobold;
+    src: url('../assets/fonts/TektonProBold.otf');
+  }
+  @font-face {
+    font-family: tektonproregular;
+    src: url('../assets/fonts/TektonProRegular.otf');
+  }
+  .tabs-md[tabsLayout=icon-top] .has-icon .tab-button-text{
+    font-family: tektonprobold;
+  }
+

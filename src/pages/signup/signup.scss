@@ -1,0 +1,45 @@
+page-signup {
+  .main{
+    background-image: url('../../assets/icon/background2.png');
+    background-size: cover;
+    background-repeat:   no-repeat;
+    background-position: center center;
+  }
+  .logo{
+    text-align: center;
+    padding-top: 7%;
+  }
+  .toolbar-background-ios {
+    background: #9ed5d2;
+  }
+  .item-divider i { position:absolute; right:10px; }
+  .signupbtn{
+    background-color: #fecb32;
+    opacity: 1 !important;
+    font-family: segoeprb;
+    font-weight: 700;
+    border-radius: 10px;
+  }
+  .list-ios .item-ios[no-lines]{
+    margin:0 0 6% 0;
+    font-family: inherit;
+    border-radius: 10px;
+  }
+  .scroll-content {
+    padding-bottom: 0 !important;
+  }
+  .login{
+    text-align: center;
+    color: aqua;
+    font-size: large;
+  }
+  .toolbar-title-ios {
+    color: #005a4e;
+    margin: 0 0 0 0;
+    font-family: tektonprobold;
+  }
+  .item-label-stacked .text-input-ios, .item-label-floating .text-input-ios {
+    margin-top: 4%;
+  }
+
+}

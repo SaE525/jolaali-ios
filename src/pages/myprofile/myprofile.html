@@ -1,0 +1,68 @@
+<!--
+  Generated template for the MyprofilePage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+
+<ion-content padding class="main">
+  <div class="logo">
+    <img src="assets/icon/Group.png">
+  </div>
+  <div class="form-area">
+      <ion-list>
+
+        <ion-item no-lines class="item-margin-top-8 item-height-40 radius-8">
+          <ion-input [(ngModel)]="FirstName" type="text" placeholder="First Name" required></ion-input>
+        </ion-item>
+
+        <ion-item no-lines class="item-margin-top-8 item-height-40 radius-8">
+          <ion-input [(ngModel)]="LastName" type="text" placeholder="Last Name" required></ion-input>
+        </ion-item>
+
+        <ion-item  style="opacity: 0.5;"  no-lines class="item-margin-top-8 item-height-40 radius-8">
+          <ion-input disabled="true" [(ngModel)]="Email" type="email" placeholder="Email" required></ion-input>
+        </ion-item>
+
+        <ion-item no-lines class="item-margin-top-8 item-height-40 radius-8">
+          <ion-input [(ngModel)]="MobileNumber" type="tel" maxlength="10"  placeholder="Mobile number" required></ion-input>
+        </ion-item>
+
+        <ion-item no-lines class="item-margin-top-8 item-height-40 radius-8">
+          <ion-input  [(ngModel)]="country" type="text" placeholder="Country" required></ion-input>
+        </ion-item>
+
+        <ion-item no-lines class="item-margin-top-8 item-height-40 radius-8">
+          <ion-input  [(ngModel)]="state" type="text" placeholder="State" required></ion-input>
+        </ion-item>
+
+        <ion-item no-lines class="item-margin-top-8 item-height-40 radius-8">
+          <ion-input  [(ngModel)]="city" type="text" placeholder="City" required></ion-input>
+        </ion-item>
+
+        <ion-item no-lines class="item-margin-top-8 item-height-40 radius-8">
+          <ion-input  [(ngModel)]="zip" type="number" placeholder="Zip Code" required></ion-input>
+        </ion-item>
+
+        <ion-item no-lines class="item-margin-top-8 item-height-40 radius-8">
+          <ion-input   [(ngModel)]="addressLine1" type="text" placeholder="Address Line1" required></ion-input>
+        </ion-item>
+
+        <ion-item no-lines class="item-margin-top-8 item-height-40 radius-8">
+          <ion-input [(ngModel)]="addressLine2" type="text" placeholder="Address Line2" required></ion-input>
+        </ion-item>
+
+        <p *ngIf="validForm" style="color:red; text-align:center">Please fill the fields</p>
+
+        <button
+          class="item-margin-top-8 radius-8 updatebtn"
+          type="submit" icon-right ion-button
+          block (click)="updateProfile()">Update</button>
+        <button
+          class="item-margin-top-8 radius-8 logout"
+          type="submit" icon-right ion-button
+          block (click)="logOut()">Logout</button>
+      </ion-list>
+
+  </div>
+</ion-content>

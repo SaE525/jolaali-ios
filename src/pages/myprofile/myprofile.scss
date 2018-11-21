@@ -1,0 +1,45 @@
+page-myprofile {
+  .main{
+    background-image: url('../../assets/icon/background2.png');
+    background-size: cover;
+    background-repeat:   no-repeat;
+    background-position: center center;
+  }
+  .logo{
+    text-align: center;
+    padding-top:14%;
+  }
+  .form-area{
+    margin-top: 8%;
+  }
+  .scroll-content {
+    padding-bottom: 0 !important;
+  }
+  .list-ios .item-ios[no-lines]{
+    margin:0 0 6% 0;
+    font-family: inherit;
+    border-radius: 10px;
+  }
+  .updatebtn{
+    background-color: #fecb32;
+    opacity: 1 !important;
+    font-family: segoeprb;
+    font-weight: 700;
+    border-radius: 10px;
+    margin: inherit;
+  }
+  .logout{
+    background: linear-gradient(to bottom, #72b5d0, #15565c);
+    opacity: 1 !important;
+    font-family: segoeprb;
+    font-weight: 700;
+    border-radius: 10px;
+  }
+  .disabled {
+    pointer-events:none; //This makes it not clickable
+    opacity:0.6;         //This grays it out to look disabled
+  }
+  .success{
+    background: green;
+  }
+}

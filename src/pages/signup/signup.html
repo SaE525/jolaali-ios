@@ -1,0 +1,100 @@
+<!--
+  Generated template for the SignupPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>SIGN UP</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding class="main">
+
+  <!--top logo -->
+  <div class="logo">
+    <img src="assets/icon/Group.png">
+  </div>
+
+  <!--signup form -->
+  <form [formGroup]="signUpForm">
+
+      <ion-list>
+
+        <ion-item no-lines>
+          <ion-label stacked *ngIf="firstName.hasError('required') && firstName.touched" text-wrap style="color:red;">* Please Enter First Name</ion-label>
+          <ion-input (keyup)="onKeyPress($event)"  [formControl]="firstName" type="text" placeholder="First Name" required></ion-input>
+        </ion-item>
+
+        <ion-item no-lines>
+          <ion-label stacked *ngIf="lastName.hasError('required') && lastName.touched" text-wrap style="color:red;">* Please Enter Last Name</ion-label>
+          <ion-input  (keyup)="onKeyPress($event)" [formControl]="lastName" type="text" placeholder="Last Name" required></ion-input>
+        </ion-item>
+
+        <ion-item no-lines>
+          <ion-label stacked *ngIf="email.hasError('required') && email.touched" text-wrap style="color:red;">* Please Enter Email Address</ion-label>
+          <ion-label stacked text-wrap style="color:red;" *ngIf="!email.hasError('required') && email.touched && !email.valid">* Email is invalid!</ion-label>
+          <ion-input [formControl]="email" type="email" placeholder="Email" required></ion-input>
+        </ion-item>
+
+        <ion-item no-lines>
+          <ion-label stacked *ngIf="mobileNumber.hasError('required') && mobileNumber.touched" text-wrap style="color:red;">* Please Enter Mobile Number</ion-label>
+          <ion-label stacked *ngIf="mobileNumber.hasError('minlength') && mobileNumber.touched" text-wrap style="color:red;">*Minmum of 10 digits is required!</ion-label>
+          <ion-input [formControl]="mobileNumber" type="tel" placeholder="Mobile Number" maxlength="10" required></ion-input>
+        </ion-item>
+
+        <ion-item no-lines>
+          <ion-label stacked *ngIf="password.hasError('required') && password.touched" text-wrap style="color:red;">* Please Enter Password</ion-label>
+          <ion-input  clearOnEdit="false"  [formControl]="password" type="password" placeholder="Password" required></ion-input>
+        </ion-item>
+
+        <ion-item no-lines>
+          <ion-label stacked *ngIf="confirmPassword.hasError('required') && confirmPassword.touched"text-wrap style="color:red;">* Please Enter Confirm Password</ion-label>
+          <ion-input  clearOnEdit="false"  [formControl]="confirmPassword" type="password" placeholder="Confirm Password" (change)="checkMatch()" required></ion-input>
+        </ion-item>
+
+        <ion-item no-lines>
+          <ion-label stacked ngIf="country.hasError('required') && country.touched" text-wrap style="color:red;"> Please Enter Country</ion-label>
+          <ion-input  [formControl]="country" type="text" placeholder="Country" required></ion-input>
+        </ion-item>
+
+        <ion-item no-lines>
+          <ion-label stacked ngIf="state.hasError('required') && state.touched" text-wrap style="color:red;"> Please Enter State</ion-label>
+          <ion-input  [formControl]="state" type="text" placeholder="State" required></ion-input>
+        </ion-item>
+        <ion-item no-lines>
+          <ion-label stacked ngIf="city.hasError('required') && city.touched" text-wrap style="color:red;"> Please Enter City</ion-label>
+          <ion-input  [formControl]="city" type="text" placeholder="City" required></ion-input>
+        </ion-item>
+
+        <ion-item no-lines>
+          <ion-label stacked ngIf="zip.hasError('required') && state.touched" text-wrap style="color:red;"> Please Enter Zipcode</ion-label>
+          <ion-input  [formControl]="zip" type="number" placeholder="Zip Code" required></ion-input>
+        </ion-item>
+
+        <!--<ion-item>-->
+        <!--<ion-select [formControl]="country">-->
+        <!--<ion-option *ngFor="let country of countries" [value]="country">{{country.name}}</ion-option>-->
+        <!--</ion-select>-->
+        <!--</ion-item>-->
+
+        <ion-item no-lines>
+          <ion-label stacked ngIf="addressLine1.hasError('required') && addressLine1.touched"text-wrap style="color:red;"> Please Enter Address Line1</ion-label>
+          <ion-input  clearOnEdit="false"  [formControl]="addressLine1" type="text" placeholder="Address Line1" required></ion-input>
+        </ion-item>
+
+        <ion-item no-lines>
+          <ion-label stacked ngIf="addressLine2.hasError('required') && addressLine2.touched"text-wrap style="color:red;"> Please Enter Address Line2</ion-label>
+          <ion-input  clearOnEdit="false"  [formControl]="addressLine2" type="text" placeholder="Address Line2" required></ion-input>
+        </ion-item>
+
+        <button
+                class="item-margin-top-8 radius-8 signupbtn"
+                type="submit" icon-right ion-button
+                block (click)="signUp()">Sign up</button>
+      </ion-list>
+  </form>
+</ion-content>

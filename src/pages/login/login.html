@@ -1,0 +1,51 @@
+<!--
+  Generated template for the LoginPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+
+<ion-content padding class="main">
+  <!--top logo -->
+  <div class="logo">
+    <img src="assets/icon/Group.png">
+  </div>
+  <div class="messagearea">
+    <img src="assets/icon/logintext.png">
+  </div>
+
+  <!--signup form -->
+  <div class="form-area">
+  <form [formGroup]="signInForm">
+
+    <ion-list>
+
+      <ion-item no-lines>
+        <ion-label stacked *ngIf="email.hasError('required') && email.touched" text-wrap style="color:red;">* Please Enter Registered Email Address</ion-label>
+        <ion-label stacked text-wrap style="color:red;" *ngIf="!email.hasError('required') && email.touched && !email.valid">* Email is invalid!</ion-label>
+        <ion-input [formControl]="email" type="email" placeholder="Email" required></ion-input>
+      </ion-item>
+
+      <ion-item no-lines>
+        <ion-label stacked *ngIf="password.hasError('required') && password.touched" text-wrap style="color:red;">* Please Enter Valid Password</ion-label>
+        <ion-input clearOnEdit="false" [formControl]="password" type="password" placeholder="Password" required></ion-input>
+      </ion-item>
+
+      <ion-item class="bg">
+        <ion-checkbox  [formControl]="rememberMe"></ion-checkbox>
+        <ion-label item-start color="whitegray" class="centercheckbox">Remember me</ion-label>
+      </ion-item>
+
+      <button
+        class="item-margin-top-8 radius-8 signinbtn"
+        type="submit" icon-right ion-button
+        block (click)="doLogin()">Sign In</button>
+    </ion-list>
+  </form>
+  </div>
+  <div class="bottom-area">
+    <span class="span1" (click)="forgot()">Forgot Password?</span>
+    <span class="span2">Don't have an account?</span>
+    <span class="span3" (click)="signUp()"> &ensp;Sign Up</span>
+  </div>
+</ion-content>

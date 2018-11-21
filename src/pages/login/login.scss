@@ -1,0 +1,71 @@
+page-login {
+  .main{
+    background-image: url('../../assets/icon/background2.png');
+    background-size: cover;
+    background-repeat:   no-repeat;
+    background-position: center center;
+  }
+  .logo{
+    text-align: center;
+    padding-top: 9%;
+  }
+  .messagearea{
+    margin-top: 5%;
+    text-align: center;
+  }
+  .messagearea>img{
+    width: 75%;
+  }
+  .list-ios .item-ios[no-lines]{
+    margin:0 0 6% 0;
+    font-family: inherit;
+    border-radius: 10px;
+  }
+  .signinbtn{
+    background-color: #fecb32;
+     opacity: 1 !important;
+     font-weight: 700;
+     border-radius: 10px;
+    font-family: segoeprb;
+   }
+  .scroll-content {
+    padding-bottom: 0 !important;
+  }
+  .form-area{
+    margin-top: 14%;
+  }
+  .bottom-area{
+    text-align: center;
+    margin-top: 5%;
+  }
+  .span1{
+    display:block;
+    color: aqua;
+    margin-bottom: 2%;
+  }
+  .span2{
+    color: white
+  }
+  .span3{
+    color: aqua;
+  }
+  .centercheckbox{
+    color: white;
+  }
+  .bg{
+    background-color: transparent !important;
+    margin: -5% 0 0 27%;
+  }
+  .bg .item-inner {
+    border-bottom: 0px !important;
+  }
+  .item-label-stacked .text-input-ios, .item-label-floating .text-input-ios {
+    margin-top: 4%;
+  }
+  .item.item-ios .checkbox-ios {
+    position: static;
+    display: block;
+    margin: 3% 3% 4% 0%;
+  }
+
+}
